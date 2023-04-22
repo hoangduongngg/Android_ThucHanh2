@@ -19,15 +19,15 @@ public class ViewPagerAdpater extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                new FragmentHome();
+                return new FragmentHome();
             case 1:
-                new FragmentInfo();
+                return new FragmentInfo();
             case 2:
-                new FragmentSearch();
+                return new FragmentSearch();
             default:
-                new FragmentHome();
+                return new FragmentHome();
         }
-        return null;
+//        return null;
     }
     @Override
     public int getCount() {
